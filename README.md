@@ -85,7 +85,7 @@ doruk projesi.
 ## Depo yapısı
 
 ```
-linear_algebra_for_ml/
+makine_ogrenmesi_icin_lineer_cebir/
 ├── README.md
 ├── requirements.txt
 ├── notebooks/          # 12 ders not defteri
@@ -98,8 +98,8 @@ linear_algebra_for_ml/
 ## Başlarken
 
 ```bash
-git clone https://github.com/HAYDARKILIC/linear_algebra_for_ml.git
-cd linear_algebra_for_ml
+git clone https://github.com/HAYDARKILIC/makine_ogrenmesi_icin_lineer_cebir.git
+cd makine_ogrenmesi_icin_lineer_cebir
 pip install -r requirements.txt
 jupyter lab
 ```
