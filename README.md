@@ -1,36 +1,8 @@
 # Makine Öğrenmesi için Lineer Cebir
 
-Modern makine öğrenmesinin temelindeki lineer cebiri **saf NumPy ile sıfırdan**
-yeniden inşa eden, ardından her yapıyı ona bağımlı olan modele geri bağlayan altı
-haftalık, ilk ilkelerden bir kurs. Algoritmayı kendiniz uygulayıp tam olarak neyi
-ve neden döndürdüğünü anlayana kadar kara kutu `np.linalg` çağrıları yok.
-
-Her ders kendi içinde eksiksiz bir Jupyter not defteridir: teorik türetme,
-sıfırdan bir uygulama, geometrinin görselleştirmeleri, referans kütüphaneye karşı
-bir doğrulama ve çözümlü alıştırmalar.
-
----
-
-## Felsefe
-
-Çoğu makine öğrenmesi uygulayıcısı lineer cebiri bir API gibi ele alır. Bu kurs
-onu *görebileceğiniz* ve *inşa edebileceğiniz* bir dizi geometrik fikir olarak ele
-alır. Ana eksen her zaman aynı döngüdür:
-
-> **matematiği türet → NumPy'da uygula → geometriyi görselleştir → `scipy`/`numpy` ile doğrula → gerçek bir makine öğrenmesi problemine uygula.**
-
-Sonunda elle yazmış olacaksınız: Gauss eleme, Gram–Schmidt, kuvvet yöntemi, QR
-yinelemesi, tam bir SVD, PCA, normal denklemler aracılığıyla ridge regresyonu ve
-yalnızca lineer cebirden oluşan bir sinir ağı katmanı — ve her birinin gizlice
-hangi ayrışıma dayandığını tam olarak bileceksiniz.
-
----
-
-## Ön koşullar
-
-- Rahat Python ve temel NumPy (diziler, dilimleme, yayınlama/broadcasting)
-- Lise cebiri; önceden lineer cebir bilgisi varsayılmıyor
-- Yöntemlerin yalnızca nasıl çağrılacağına değil, *neden* işlediğine dair merak
+Bu depo, lineer cebiri makine öğrenmesi gözüyle sıfırdan öğreten 6 haftalık bir derstir. Buradaki yaklaşım, konuları soyut teoremler yığını olarak değil, geometrik sezgiyle ve çalışan kodla birlikte ele almaktır. Her kavram önce ne anlama geldiğiyle tanıtılır, sonra elle inşa edilir; hazır çözücülere güvenmek yerine algoritmaların içinde ne olduğu açıkça gösterilir.
+Dersi bir arada tutan fikir, lineer cebirin makine öğrenmesinin dili olduğudur. Bir veri kümesi neden bir vektör bulutudur, bir öznitelik neden bir koordinattır, bir matris neden uzayı hareket ettiren bir fonksiyondur — bu sorular tüm boyunca yeniden karşımıza çıkar. Soyut bir kavram her tanıtıldığında, onun gerçek bir modelde nasıl iş gördüğü gösterilir: en küçük kareler doğrusal regresyonun motorudur, özproblemler PageRank'in kalbidir, SVD ise PCA'dan görüntü sıkıştırmaya kadar her şeyin altında yatar.
+Ders, her biri tek başına yeterli olan 12 Jupyter notebook'tan oluşur ve altı haftaya yayılır. Birinci haftada vektörler, normlar ve izdüşümlerle temel atılır. İkinci hafta matrisleri sayı ızgaraları olarak görmeyi bırakıp onları doğrusal dönüşümler olarak ele alır. Üçüncü hafta doğrusal sistemleri Gauss elemesi ve LU ayrışımıyla çözer ve en küçük karelere ulaşır. Dördüncü hafta ortogonallik ile Gram–Schmidt ve QR ayrışımını, sayısal kararlılık vurgusuyla işler. Beşinci hafta özdeğerler ve özvektörlerle lineer cebirin spektral kalbine iner; kuvvet yöntemi ve QR yinelemesi elle kodlanır. Altıncı hafta ise bir bitirme doruğu niteliğindedir: en önemli ayrışım olan SVD özayrışımdan kurulur ve doğrudan PCA, düşük ranklı yaklaşım ve gerçek bir makine öğrenmesi modeline bağlanır.
 
 ---
 
@@ -106,16 +78,6 @@ jupyter lab
 
 `notebooks/01_vektorler_ve_vektor_uzaylari.ipynb` dosyasını açın ve baştan sona çalışın.
 Her not defteri tek başına çalışır.
-
----
-
-## Bu kurs nasıl kullanılır
-
-1. **Türetmeyi okuyun** — matematik gerekçelendirilmiştir, öylece bırakılmamıştır.
-2. **Uygulamayı önce kendiniz yazın**, verilenini okumadan önce.
-3. **Görselleştirmeleri çalıştırın** — döndürün, girdileri değiştirin, bozun.
-4. **Alıştırmaları yapın** — çözümler her not defterinin altında katlanmıştır.
-5. **İleriye bağlayın** — her not defteri "Bunun makine öğrenmesinde karşımıza çıktığı yer" ile biter.
 
 ---
 
